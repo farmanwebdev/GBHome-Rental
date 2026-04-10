@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy-950: #131849;
+  --gold-500: #f0b429;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: #f8f9fc;
+  color: #1a1a2e;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6 { font-family: 'Playfair Display', Georgia, serif; }
+
+@layer components {
+  .btn-primary {
+    @apply bg-navy-950 text-white font-semibold px-6 py-3 rounded-xl hover:bg-navy-900 transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0;
+  }
+  .btn-secondary {
+    @apply border-2 border-navy-950 text-navy-950 font-semibold px-6 py-3 rounded-xl hover:bg-navy-950 hover:text-white transition-all duration-200;
+  }
+  .btn-gold {
+    @apply bg-gold-500 text-navy-950 font-bold px-6 py-3 rounded-xl hover:bg-gold-600 transition-all duration-200 shadow-md;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300;
+  }
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-navy-950/20 focus:border-navy-950 bg-white transition-all;
+  }
+  .badge-available { @apply bg-emerald-100 text-emerald-700 border border-emerald-200; }
+  .badge-pending { @apply bg-amber-100 text-amber-700 border border-amber-200; }
+  .badge-rented { @apply bg-blue-100 text-blue-700 border border-blue-200; }
+  .badge-sold { @apply bg-red-100 text-red-700 border border-red-200; }
+  .section-heading { @apply font-display text-3xl md:text-4xl font-bold text-navy-950 leading-tight; }
+}
