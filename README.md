@@ -239,14 +239,7 @@ public site          rejection reason
   - Images served at `http://localhost:5000/uploads/filename.jpg`
   - No config needed to get started!
 
-### Admin Default Credentials
-After running `npm run seed`:
-```
-Email:    admin@gbrentals.com
-Password: admin123
-```
 
----
 
 ## 🆕 New Features (Latest Update)
 
