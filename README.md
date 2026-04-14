@@ -161,11 +161,7 @@ npm run dev         # Start on :3000
 2. Set **Root Directory** to `frontend`
 3. Add env variable: `NEXT_PUBLIC_API_URL=https://your-render-app.onrender.com/api`
 
-### Database → MongoDB Atlas
-1. Create a free cluster at [cloud.mongodb.com](https://cloud.mongodb.com)
-2. Create a database user
-3. Get connection string → paste as `MONGODB_URI`
-4. Whitelist `0.0.0.0/0` for Render access
+
 
 ### Image Uploads → Cloudinary
 1. Sign up at [cloudinary.com](https://cloudinary.com)
